@@ -1,0 +1,17 @@
+.to-do {
+  position: relative;
+  padding: 32px;
+}
+.add-btn {
+  background-color: #4fe3a5;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  color: gray;
+  border: none;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%);
+}

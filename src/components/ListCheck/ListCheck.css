@@ -1,0 +1,11 @@
+.circle {
+  width: 22px;
+  height: 22px;
+  border: 1px solid gray;
+  border-radius: 100%;
+  display: inline-block;
+}
+.complete .circle {
+  background-color: #4fe3a4;
+  border-color: #229161;
+}

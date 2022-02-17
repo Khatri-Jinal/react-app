@@ -1,0 +1,30 @@
+.date-and-day {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.date-container {
+  display: flex;
+}
+.date {
+  font-size: 32px;
+  margin-right: 8px;
+}
+.month {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.year {
+  font-size: 12px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.day-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
