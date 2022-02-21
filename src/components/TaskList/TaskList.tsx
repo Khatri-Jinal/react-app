@@ -1,13 +1,14 @@
-import ListCheck from "../ListCheck/ListCheck";
+import Task from "../Task/Task";
 import "./TaskList.css";
 
-interface Task {
+interface TaskProps {
   id: number;
   title: string;
   complete: boolean;
 }
+
 function TaskList() {
-  const tasks: Task[] = [
+  const tasks: TaskProps[] = [
     { id: 1, title: "Buy new sweatshirt", complete: true },
     { id: 2, title: "Begin promotional phase", complete: true },
     { id: 3, title: "Read an article", complete: false },
@@ -18,18 +19,8 @@ function TaskList() {
   ];
   return (
     <ul className="task-list">
-      {tasks.map((task) => {
-        return (
-          <li
-            key={task.id}
-            className={task.complete ? "task complete" : "task"}
-          >
-            <span className="title">{task.title}</span>
-            <span>
-              <ListCheck />
-            </span>
-          </li>
-        );
+      {tasks.map((props) => {
+        return <Task key={props.id} {...props} />;
       })}
     </ul>
   );

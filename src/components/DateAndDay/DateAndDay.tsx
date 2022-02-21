@@ -1,5 +1,6 @@
 import { Component } from "react";
 import "./DateAndDay.css";
+
 class DateAndDay extends Component {
   render() {
     return (
