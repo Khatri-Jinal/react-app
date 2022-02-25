@@ -3,14 +3,14 @@ import "./Task.css";
 
 interface TaskProps {
   id: number;
-  title: string;
-  complete: boolean;
+  title: any;
+  complete: any;
 }
 
-function Task(props: TaskProps) {
+function Task({ id, title, complete }: TaskProps) {
   return (
-    <li className={props.complete ? "task complete" : "task"}>
-      <span className="title">{props.title}</span>
+    <li key={id} className={complete ? "task complete" : "task"}>
+      <span className="title">{title}</span>
       <span>
         <ListCheck />
       </span>
